@@ -30,11 +30,11 @@ android的USB權限主要分成手動黨跟自動黨
                 
 resouce中填寫以下內容
 
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!--decimal-->
-    <usb-device vendor-id="1234" product-id="5678" />
-</resources>
+            <?xml version="1.0" encoding="utf-8"?>
+            <resources>
+                <!--decimal-->
+                <usb-device vendor-id="1234" product-id="5678" />
+            </resources>
 
 問題是一般的手動黨只要裝置重新插拔或重開APP就要重新請求權限
 
