@@ -28,13 +28,15 @@ android的USB權限主要分成手動黨跟自動黨
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/device_filter" />
                 
-resouce中填寫以下內容
+device_filter中填寫以下內容
 
             <?xml version="1.0" encoding="utf-8"?>
             <resources>
                 <!--decimal-->
                 <usb-device vendor-id="1234" product-id="5678" />
             </resources>
+
+vendor-id跟product-id要改成裝置的PID和VID
 
 問題是一般的手動黨只要裝置重新插拔或重開APP就要重新請求權限
 
